@@ -8,6 +8,7 @@ import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Gallery from "@/components/Gallery"; 
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,6 +28,7 @@ export default function App() {
       <Skills />
       <Education />
       <Certifications />
+      <Gallery />
       <Contact />
       <Footer />
     </div>

@@ -1,6 +1,20 @@
 @import 'tailwindcss';
+@keyframes videoZoom {
+  from {
+    transform: scale(1.1);
+  }
 
-@theme {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+
+.animate-videoZoom {
+  animation: videoZoom 20s ease-in-out infinite alternate;
+}
+
+@theme  {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
 }
