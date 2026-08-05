@@ -4,20 +4,28 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="
+        relative
+        min-h-screen
+        flex
+        items-center
+        justify-center
+        overflow-hidden
+        py-20
+      "
     >
 
-      {/* Background Video Slow Motion */}
+      {/* Background Video */}
       <video
         autoPlay
         loop
         muted
         playsInline
         className="
-          absolute 
-          inset-0 
-          w-full 
-          h-full 
+          absolute
+          inset-0
+          w-full
+          h-full
           object-cover
           scale-110
           animate-videoZoom
@@ -28,40 +36,53 @@ export default function Hero() {
 
 
       {/* Overlay */}
-      <div className="
-        absolute 
-        inset-0 
-        .bg-gradient-to-br 
-        from-stone-900/90 
-        via-stone-800/75 
-        to-amber-900/70
-      "/>
+      <div
+        className="
+          absolute
+          inset-0
+          bg-gradient-to-br
+          from-stone-900/90
+          via-stone-800/80
+          to-amber-900/70
+        "
+      />
 
 
 
       {/* Content */}
-      <div className="
-        relative 
-        z-10 
-        text-center 
-        px-6 
-        max-w-6xl 
-        mx-auto
-        pt-10
-      ">
+      <div
+        className="
+          relative
+          z-10
+          w-full
+          max-w-6xl
+          mx-auto
+          px-5
+          sm:px-8
+          text-center
+        "
+      >
 
 
-        {/* Profile Image Bigger */}
-        <div className="mb-10 flex justify-center">
+        {/* Profile Image */}
+        <div className="flex justify-center mb-6 sm:mb-8">
 
           <img
             src="/Nazmul.jpeg"
             alt="Nazmul"
             className="
-              w-48 
-              h-48
-              md:w-56
-              md:h-56
+              w-32
+              h-32
+
+              sm:w-40
+              sm:h-40
+
+              md:w-48
+              md:h-48
+
+              lg:w-56
+              lg:h-56
+
               rounded-full
               object-cover
               border-4
@@ -74,54 +95,82 @@ export default function Hero() {
 
 
 
-        <p className="
-          text-amber-400
-          font-semibold
-          text-base
-          uppercase
-          tracking-[0.3em]
-          mb-5
-        ">
+
+        {/* Small Title */}
+        <p
+          className="
+            text-amber-400
+            font-semibold
+            text-xs
+            sm:text-sm
+            md:text-base
+            uppercase
+            tracking-[0.25em]
+            mb-3
+          "
+        >
           Professional Portfolio
         </p>
 
 
 
-        <h1 className="
-          text-6xl
-          md:text-8xl
-          font-bold
-          text-white
-          mb-5
-          tracking-tight
-        ">
+
+        {/* Name */}
+        <h1
+          className="
+            text-5xl
+            sm:text-6xl
+            md:text-7xl
+            lg:text-8xl
+            font-bold
+            text-white
+            tracking-tight
+            mb-3
+          "
+        >
           Nazmul
         </h1>
 
 
 
-        <p className="
-          text-2xl
-          md:text-4xl
-          text-amber-300
-          font-light
-          italic
-          mb-10
-        ">
+
+        {/* Profession */}
+        <p
+          className="
+            text-xl
+            sm:text-2xl
+            md:text-3xl
+            lg:text-4xl
+            text-amber-300
+            font-light
+            italic
+            mb-6
+            sm:mb-8
+          "
+        >
           Experienced Land Surveyor
         </p>
 
 
 
-        <p className="
-          text-stone-200
-          text-lg
-          md:text-xl
-          max-w-4xl
-          mx-auto
-          leading-relaxed
-          mb-12
-        ">
+
+        {/* Description */}
+        <p
+          className="
+            text-sm
+            sm:text-base
+            md:text-lg
+            lg:text-xl
+            text-stone-200
+            max-w-xl
+            sm:max-w-2xl
+            lg:max-w-4xl
+            mx-auto
+            leading-relaxed
+            mb-8
+            sm:mb-10
+          "
+        >
           Over 12 years of precision surveying expertise across Singapore's
           most ambitious construction projects — from HDB residential blocks
           to major infrastructure works.
@@ -130,29 +179,46 @@ export default function Hero() {
 
 
 
-        {/* Contact */}
-        <div className="
-          flex
-          flex-wrap
-          justify-center
-          gap-8
-          mb-14
-          text-base
-          text-stone-200
-        ">
+
+        {/* Contact Info */}
+        <div
+          className="
+            flex
+            flex-col
+            sm:flex-row
+            flex-wrap
+            items-center
+            justify-center
+            gap-4
+            sm:gap-6
+            md:gap-8
+            mb-10
+            sm:mb-12
+            text-sm
+            md:text-base
+            text-stone-200
+          "
+        >
 
 
-          <span className="flex items-center gap-3">
-            <MapPin className="w-6 h-6 text-amber-400"/>
+          <span className="flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-amber-400" />
             Singapore
           </span>
 
 
-          <a 
+
+          <a
             href="tel:+8801935127525"
-            className="flex items-center gap-3 hover:text-amber-400"
+            className="
+              flex
+              items-center
+              gap-2
+              hover:text-amber-400
+              transition
+            "
           >
-            <Phone className="w-6 h-6 text-amber-400"/>
+            <Phone className="w-5 h-5 text-amber-400" />
             +880 1935127525
           </a>
 
@@ -160,9 +226,15 @@ export default function Hero() {
 
           <a
             href="mailto:nazmul.avenue@gmail.com"
-            className="flex items-center gap-3 hover:text-amber-400"
+            className="
+              flex
+              items-center
+              gap-2
+              hover:text-amber-400
+              transition
+            "
           >
-            <Mail className="w-6 h-6 text-amber-400"/>
+            <Mail className="w-5 h-5 text-amber-400" />
             nazmul.avenue@gmail.com
           </a>
 
@@ -172,20 +244,33 @@ export default function Hero() {
 
 
 
+
         {/* Buttons */}
-        <div className="flex justify-center gap-6">
+        <div
+          className="
+            flex
+            flex-col
+            sm:flex-row
+            justify-center
+            items-center
+            gap-4
+          "
+        >
 
 
           <a
             href="#experience"
             className="
+              w-full
+              sm:w-auto
               bg-amber-500
               hover:bg-amber-600
               text-white
-              font-bold
-              text-lg
-              px-10
-              py-4
+              font-semibold
+              px-8
+              sm:px-10
+              py-3
+              sm:py-4
               rounded-full
               transition
               hover:-translate-y-1
@@ -199,20 +284,24 @@ export default function Hero() {
           <a
             href="#contact"
             className="
+              w-full
+              sm:w-auto
               border-2
-              border-white/50
-              text-white
-              font-bold
-              text-lg
-              px-10
-              py-4
-              rounded-full
+              border-white/40
               hover:border-amber-400
+              text-white
               hover:text-amber-400
+              font-semibold
+              px-8
+              sm:px-10
+              py-3
+              sm:py-4
+              rounded-full
               transition
+              hover:-translate-y-1
             "
           >
-            Contact Me
+            Get In Touch
           </a>
 
 
@@ -224,19 +313,29 @@ export default function Hero() {
 
 
 
-      {/* Scroll */}
+
+      {/* Scroll Button */}
       <a
         href="#about"
         className="
           absolute
-          bottom-8
+          bottom-5
+          sm:bottom-8
           left-1/2
           -translate-x-1/2
           text-white/70
+          hover:text-amber-400
           animate-bounce
         "
       >
-        <ChevronDown className="w-10 h-10"/>
+        <ChevronDown
+          className="
+            w-8
+            h-8
+            sm:w-10
+            sm:h-10
+          "
+        />
       </a>
 
 
