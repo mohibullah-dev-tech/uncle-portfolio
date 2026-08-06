@@ -5,7 +5,7 @@ const technicalSkills = [
   { name: 'AutoCAD', level: 90 },
   { name: 'Total Station Operation', level: 95 },
   { name: 'GPS Surveying', level: 92 },
-  { name: 'Microsoft Office', level: 85 },
+  { name: 'Microsoft Office', level: 90 },
   { name: 'Construction Layout', level: 96 },
   { name: 'Site Leveling', level: 94 },
 ];
@@ -43,7 +43,7 @@ export default function Skills() {
                   </div>
                   <div className="h-2 bg-stone-200 rounded-full overflow-hidden">
                     <div
-                      className="h-full .bg-gradient-to-r from-amber-400 to-amber-600 rounded-full transition-all duration-1000"
+                      className="h-full bg-gradient-to-r from-amber-400 to-amber-600 rounded-full transition-all duration-1000"
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>
