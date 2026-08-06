@@ -9,6 +9,7 @@ import Contact from '@/components/Contact';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Gallery from "@/components/Gallery"; 
+import FloatingWhatsApp from "@/components/FloatingWhatsApp"; 
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,6 +31,7 @@ export default function App() {
       <Certifications />
       <Gallery />
       <Contact />
+      <FloatingWhatsApp />
       <Footer />
     </div>
   );
